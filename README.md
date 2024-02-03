@@ -1,6 +1,6 @@
 # Frontend Mentor Projects
 
-![Frontend Mentor Logo](https://www.frontendmentor.io/static/images/logo-desktop.svg)[Frontend Mentor](https://www.frontendmentor.io/)
+[![Frontend Mentor Logo](https://www.frontendmentor.io/static/images/logo-desktop.svg)](https://www.frontendmentor.io/)
 
 > This repository contains my projects from Frontend Mentor, completed to enhance my front-end development skills.
 
