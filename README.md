@@ -15,8 +15,9 @@
 [Frontend Mentor](https://www.frontendmentor.io/) is a platform that provides project challenges for front-end developers. The projects cover various difficulty levels and allow for practicing HTML, CSS, JavaScript, and React skills.
 
 ## Projects
-
-1. [Project Name 1](link_to_project_1) - Brief project description.
+| Project                  | Description                             |  Technologe              |
+| ------------------------ | --------------------------------------- |--------------------------|
+| [Recipe page](link_to_project_1) | Brief project description.|-|
 
 
 ## How to Use This Repository
