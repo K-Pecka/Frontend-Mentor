@@ -4,10 +4,10 @@ import FooterMain from './components/FooterMain.vue'
 </script>
 
 <template>
-  <section>
+  <main>
     <RecipeContainer />
     <FooterMain />
-  </section>
+  </main>
   
 </template>
 
