@@ -7,7 +7,7 @@ const typeList = props?.typeList || 'ul';
 <template>
   <typeList v-if="items.length > 0">
     <li v-for="(item, index) of items" :key="index">
-      <span v-if="item.title">{{ item.title }}:</span>{{ item.value }}
+      <span v-if="item.title">{{ item.title }}: </span>{{ item.value }}
     </li>
   </typeList>
 </template>

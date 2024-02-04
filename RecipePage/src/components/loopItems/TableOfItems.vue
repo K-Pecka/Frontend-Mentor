@@ -6,7 +6,7 @@ const items = props?.items || [];
 <template>
   <table>
     <tr v-for="(item, index) of items" :key="index">
-      <td>{{ item.title }}:</td><td>{{ item.value }}</td>
+      <td>{{ item.title }}</td><td><span>{{ item.value }}</span></td>
     </tr>
   </table>
 </template>
@@ -14,5 +14,6 @@ const items = props?.items || [];
 <style scoped>
 span {
   font-weight: bold;
+  color:var(--Nutmeg);
 }
 </style>

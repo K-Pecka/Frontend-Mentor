@@ -10,7 +10,7 @@ const items = [
 <template>
   <section>
     <h2>Nutrition</h2>
-    <p>The table below shows nutritional values per serving without the additional</p>
+    <p>The table below shows nutritional values per serving without the additional fillings.</p>
     <TableOfItems :items="items" />
   </section>
 </template>

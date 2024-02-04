@@ -14,4 +14,11 @@ const items = [
   </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+section
+{
+  margin: 2em 0;
+  padding: 1em;
+  background-color: var(--RoseWhite);
+}
+</style>

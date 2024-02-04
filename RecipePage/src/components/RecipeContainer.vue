@@ -13,4 +13,3 @@ import NutritionSection from './section/NutritionSection.vue'
   </article>
 </template>
 
-<style scoped></style>

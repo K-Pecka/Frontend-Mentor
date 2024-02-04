@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "Young Serif";
+  src: url("src/assets/fonts/young-serif/YoungSerif-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("src/assets/fonts/Outfit/static/Outfit-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("src/assets/fonts/Outfit/static/Outfit-Medium.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("src/assets/fonts/Outfit/static/Outfit-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  font-size: 16px;
+  --Nutmeg: hsl(14, 45%, 36%);
+  --DarkRaspberry: hsl(332, 51%, 32%);
+  --White: hsl(0, 0%, 100%);
+  --RoseWhite: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --LightGrey: hsl(30, 18%, 87%);
+  --WengeBrown: hsl(30, 10%, 34%);
+  --DarkCharcoal: hsl(24, 5%, 18%);
+}
+* {
+  color: var(--WengeBrown);
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: 1em;
+}
+body {
+  font-family: "Outfit";
+  font-weight: 400;
+}
+h1,
+h2 {
+  font-family: "Young Serif";
+  font-weight: 400;
+  margin: 0.5em 0;
+}
+h1 {
+  font-size: 3.4em;
+  color: var(--DarkCharcoal);
+}
+h3 {
+  font-size: 1.2em;
+  color: var(--DarkRaspberry);
+  padding: 1em 0;
+}
+h2 {
+  font-size: 2em;
+  color: var(--Nutmeg);
+}
+img {
+  border-radius: 15px;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+ol li,
+ul li {
+  padding: 0.5em 1em;
+}
+ol,
+ul {
+  margin-left: 1.5em;
+}
+ol li::marker,
+ul li::marker {
+  color: var(--Nutmeg);
+  font-weight: bold;
+}
+td {
+  padding: 0.5em;
+}
+tr:not(:last-child) {
+  border-bottom: 1px solid var(--LightGrey);
+}
+table {
+  border-collapse: collapse;
+  margin: 0.5em;
+  width: 100%;
+}
+p{
+  line-height: 1.5em;
+}
+body {
+  background-color: var(--Eggshell);
+}
+article {
+  background-color: hsl(0, 0%, 100%);
+  padding: 3em;
+  margin: 10em 0;
+  border-radius: 15px;
+  width: 50vw;
+}
+section
+{
+  margin:0 1em;
+  padding-bottom: 2em;
+}
+section:not(:last-child)
+{
+  border-bottom: 1px solid var(--LightGrey);
+}
+@media screen and (max-width: 375px) {
+  article {
+    padding: 0em;
+    border-radius: 0;
+    margin: 0;
+    width: 100vw;
+  }
+  img {
+    border-radius: 0;
+    padding: 0;
+  }
+  h1{
+    margin: .5em 1em;
+    font-size: 2.2em;
+  }
+  h2{
+    font-size: 1.7em;
+  }
+
+  header p{
+    padding: .5em 2em;
+  }
+  section
+  {
+    padding: 0em 1em;
+  }
+}

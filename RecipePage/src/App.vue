@@ -12,4 +12,11 @@ import FooterMain from './components/FooterMain.vue'
 </template>
 
 <style scoped>
+main{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 </style>
