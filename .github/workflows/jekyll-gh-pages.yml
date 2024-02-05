@@ -8,16 +8,11 @@ on:
 jobs:
   deploy_recipe_page:
     runs-on: ubuntu-latest
-
+    
     steps:
+    
     - name: Checkout main repository
       uses: actions/checkout@v4
-
-    - name: Checkout RecipePage repository
-      uses: actions/checkout@v4
-      with:
-        repository: username/RecipePage
-        path: RecipePage  # Folder where the RecipePage repository will be cloned
 
     - name: Set up Node.js
       uses: actions/setup-node@v3
@@ -26,7 +21,6 @@ jobs:
 
     - name: Install dependencies
       run: |
-        cd RecipePage
         npm install
 
     - name: Build RecipePage
