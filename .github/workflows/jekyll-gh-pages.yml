@@ -33,4 +33,5 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
+        github_token: ${{ secrets.RECIPE_PAGE }}
         publish_dir: RecipePage/dist  # Tutaj jest wskazana ścieżka, gdzie znajduje się zbudowany projekt
