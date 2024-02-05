@@ -1,0 +1,37 @@
+name: Deploy RecipePage to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy_recipe_page:
+    runs-on: ubuntu-latest
+    
+    steps:
+    
+    - name: Checkout main repository
+      uses: actions/checkout@v4
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '14'
+
+    - name: Install dependencies
+      run: |
+        cd RecipePage
+        npm install
+        
+
+    - name: Build RecipePage
+      run: |
+        cd RecipePage
+        npm run build
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.RECIPE_PAGE }}
+        publish_dir: RecipePage/dist  # Tutaj jest wskazana ścieżka, gdzie znajduje się zbudowany projekt
