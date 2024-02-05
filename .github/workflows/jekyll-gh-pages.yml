@@ -21,19 +21,16 @@ jobs:
 
     - name: Install dependencies
       run: |
+        cd RecipePage
         npm install
 
-    - name: Install Vite
-      run: |
-        npm install -g create-vite
-        
     - name: Build RecipePage
       run: |
         cd RecipePage
-        npm run build
+        npm run build  # Tutaj odbywa się proces budowy aplikacji
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: RecipePage/dist  # Adjust the path based on your RecipePage project structure
+        publish_dir: RecipePage/dist  # Tutaj jest wskazana ścieżka, gdzie znajduje się zbudowany projekt
