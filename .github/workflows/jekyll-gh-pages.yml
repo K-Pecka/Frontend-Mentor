@@ -13,10 +13,6 @@ jobs:
     
     - name: Checkout main repository
       uses: actions/checkout@v4
-
-    - name: cd repository
-      run: |
-        cd RecipePage
     
     - name: Set up Node.js
       uses: actions/setup-node@v3
@@ -25,12 +21,14 @@ jobs:
 
     - name: Install dependencies
       run: |
+        echo "Current directory: $(pwd)"
+        cd RecipePage
         npm install
-        ls
+        
 
     - name: Build RecipePage
       run: |
-        ls
+        echo "Current directory: $(pwd)"
         cd RecipePage
         npm run build
 
