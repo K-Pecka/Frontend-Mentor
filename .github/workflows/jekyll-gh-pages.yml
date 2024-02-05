@@ -14,6 +14,10 @@ jobs:
     - name: Checkout main repository
       uses: actions/checkout@v4
 
+    - name: cd repository
+      run: |
+        cd RecipePage
+    
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
@@ -21,13 +25,11 @@ jobs:
 
     - name: Install dependencies
       run: |
-        cd RecipePage
         npm install
 
     - name: Build RecipePage
       run: |
-        cd RecipePage
-        npm run build  # Tutaj odbywa się proces budowy aplikacji
+        npm run build
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
