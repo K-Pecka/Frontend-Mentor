@@ -21,14 +21,12 @@ jobs:
 
     - name: Install dependencies
       run: |
-        echo "Current directory: $(pwd)"
         cd RecipePage
         npm install
         
 
     - name: Build RecipePage
       run: |
-        echo "Current directory: $(pwd)"
         cd RecipePage
         npm run build
 
